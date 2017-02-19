@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>proStoria</title>
+	<!--<link rel="stylesheet" href="css/normalize.css">-->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+	<script>
+        // Picture element HTML5 shiv
+        document.createElement( "picture" );
+	</script>
+	<script src="https://cdn.rawgit.com/scottjehl/picturefill/master/dist/picturefill.min.js" async></script>
+</head>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="js/carusel.js"></script>
+<body>
+<header>
+	<div class="wrapper">
+		<h1 class="logo">Prostoria</h1>
+		<nav>
+			<h2>Main Navigation</h2>
+				<div id='sandwich'>
+					<div class='sw-topper'></div>
+  					<div class='sw-bottom'></div>
+				</div>
+			<ul>
+				<li><a href="index.html" class="current">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="download.html">Download</a></li>
+				<li><a href="forum.html">Forum</a></li>
+			</ul>
+			<div class="search">
+				<input type="text" id="searchInput" placeholder="Search proStoria" value=""/>
+				<img src="images/search.svg" width="50px" height="50px">
+			</div>
+		</nav>
+	</div>
+</header>
+
+<div id="myCarousel" class="carousel slide myCarousel" data-interval="10000" data-ride="carousel">
+	<ol class="carousel-indicators">
+		<li data-target="#myCarousel" data-slide-to="0" class="active">
+			<!--<div id="myBar"></div>-->
+		</li>
+		<li id="li-two" data-target="#myCarousel" data-slide-to="1">
+			<!--<div id="myBar-2"></div>-->
+		</li>
+		<li data-target="#myCarousel" data-slide-to="2">
+
+		</li>
+	</ol>
+	<!-- Carousel items -->
+	<div class="carousel-inner">
+		<div class="active item">
+			<!--put img inside itens like this-->
+			<picture>
+				<source srcset="images/bcgCupMobile.jpg" media="(max-width: 480px)">
+				<source srcset="images/bcgCupTablet.jpg" media="(max-width: 768px)">
+				<img srcset="images/bcgCup.jpg" alt="bcgCup">
+			</picture>
+			<div class="container">
+				<div class="carousel-caption">
+					<div id="str"></div>
+					<div class="get-started">
+						<button type="button" id="get-started-cup">Get started</button>
+					</div>
+					<!--<p>We copy your terabytes before</p>-->
+					<!--<p>your coffee gets cold.</p>-->
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<picture>
+				<source srcset="images/bcgMobile.jpg" media="(max-width: 480px)">
+				<source srcset="images/bcgTablet.jpg" media="(max-width: 768px)">
+				<img srcset="images/bcg.jpg" alt="bcg">
+			</picture>
+			<div class="container">
+				<div class="carousel-caption">
+					<div class="dialog">
+						<div class="bob-say opacity">
+							<blockquote>
+								<p>"We've unleashed the power of DevOps to provide <br> you with streamlined self service test database <br> management in an easy to use software."</p>
+								<footer><cite>- Gordon Flemming, Technical Director</cite></footer>
+							</blockquote>
+							<img src="images/bob.png">
+						</div>
+						<div class="get-start opacityg">
+							<button type="button" id="get-started">Get started</button>
+						</div>
+						<div class="mary-say opacitym" id="mary-say">
+							<img src="images/mary.png">
+							<blockquote>
+								<p>"We’re proud to offer an enterprise and a free <br> community version for non-commercial use. We <br> love developers and non-profit organisations and <br> we want you to use proStoria for free!"</p>
+								<footer><cite>- Malenie Windfelt, Managing Director.</cite></footer>
+							</blockquote>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<!--image bcg here-->
+			<img src="images/bcgW.jpg" alt="bcg-white">
+			<div class="container">
+				<div class="carousel-caption">
+					<!--<div class="video">-->
+						<!--<video controls>-->
+							<!--<source src="images/pro.mp4" type="video/mp4">-->
+							<!--&lt;!&ndash;<source src="mov_bbb.ogg" type="video/ogg">&ndash;&gt;-->
+							<!--Your browser does not support HTML5 video.-->
+						<!--</video>-->
+					<!--</div>-->
+				</div>
+			</div>
+		</div>
+	</div>
+	<hr class="transition-timer-carousel-progress-bar" />
+	<!--<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">-->
+		<!--<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
+		<!--<span class="sr-only">Previous</span>-->
+	<!--</a>-->
+	<!--<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">-->
+		<!--<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
+		<!--<span class="sr-only">Next</span>-->
+	<!--</a>-->
+</div>
+
+<script src="js/main.js"></script>
+<!--<script type="text/javascript" src="js/jquery.min.js"></script>-->
+
+</body>
+</html>
